@@ -1,7 +1,7 @@
 {
   "name": "desafio01semana04",
   "version": "1.0.0",
-  "description": "O programa consiste em uma função que escolhe de forma aleatória 4 bolas coloridas e forma uma sequência num arquivo txt.",
+  "description": "O programa consiste em uma função que escolhe de forma aleatória 4 bolas coloridas e forma uma sequência em um arquivo txt.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
