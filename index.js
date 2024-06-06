@@ -1,3 +1,5 @@
+// Teste Branch
+
 const modulos = require("./modulos"); // Importa os métodos do objeto criado no arquivo modulos.js
 
 function gerarSequenciaDeCores() {
