@@ -1,9 +1,7 @@
-// Teste Branch
-
 const modulos = require("./modulos"); // Importa os métodos do objeto criado no arquivo modulos.js
 
 function gerarSequenciaDeCores() {
-  modulos.criaArquivo(); // Verifica se o arquivo resutlado.txt existe, caso não tenha ele será criado
+  modulos.criarArquivo(); // Verifica se o arquivo resutlado.txt existe, caso não tenha ele será criado
 
   const arrCores = ["verde", "azul", "amarelo", "vermelho"];
 
@@ -36,10 +34,8 @@ function gerarSequenciaDeCores() {
     arrTemp = [];
     sequenciaTemp = "";
   }
+
+  modulos.resultado();
 }
 
 gerarSequenciaDeCores();
-
-setTimeout(() => {
-  modulos.resultado();
-}, 1000);
