@@ -11,16 +11,21 @@ module.exports.criarArquivo = () => {
   });
 };
 
-module.exports.escreverNoArquivo = (sequencia) => {
-  sequencia = sequencia + "\r\n";
+module.exports.escreverNoArquivo = (arr) => {
+  const arrSemUltimoElemento = arr.pop();
+  const ultimoElementoTratado = arrSemUltimoElemento.trim();
 
-  fs.appendFileSync("resultado.txt", sequencia, (err) => {
-    if (err) {
-      throw err;
-    } else {
-      return "Escrito com sucesso!";
-    }
-  });
+  arr.push(ultimoElementoTratado);
+
+  for (let i = 0; i < arr.length; i++) {
+    fs.appendFileSync("resultado.txt", arr[i], (err) => {
+      if (err) {
+        throw err;
+      } else {
+        return "Escrito com sucesso!";
+      }
+    });
+  }
 };
 
 module.exports.resultado = () => {

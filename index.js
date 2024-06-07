@@ -7,6 +7,7 @@ function gerarSequenciaDeCores() {
 
   let arrTemp = []; // Array temporário para auxiliar na criação da sequência de cores
   let sequenciaTemp = ""; // Variável temporária para salvar a sequência de cores sorteada como string
+  const arr = [];
 
   for (let i = 0; i < 1000; i++) {
     for (let i = 0; i < 4; i++) {
@@ -27,13 +28,15 @@ function gerarSequenciaDeCores() {
       }
     }
 
-    sequenciaTemp = `${arrTemp[0]},${arrTemp[1]},${arrTemp[2]},${arrTemp[3]}`;
+    sequenciaTemp = `${arrTemp[0]},${arrTemp[1]},${arrTemp[2]},${arrTemp[3]}\n`;
 
-    modulos.escreverNoArquivo(sequenciaTemp); // Salvando no arquivo a sequência sorteada
+    arr.push(sequenciaTemp);
 
     arrTemp = [];
     sequenciaTemp = "";
   }
+
+  modulos.escreverNoArquivo(arr); // Salvando no arquivo a sequência sorteada
 
   modulos.resultado();
 }
