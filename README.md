@@ -10,5 +10,4 @@ Pacote utilizado/importado no arquivo modulos.js\
 
 ### `node index.js`
 
-Executa a aplicação, criando a sequência de cores e gravando as mesmas no arquivo **resultado.txt**, caso o arquivo não esteja criado a propiá\
-Aplicação irá criar ela antes de sortear a sequência de cores com base nos pesos, após o sorteio será exibido no terminal o resultado.
+Executa a aplicação, criando a sequência de cores com base nos pesos e gravando as mesmas no arquivo **resultado.txt**, caso o arquivo não esteja criado a propiá aplicação irá criar o arquivo antes de sortear a sequência de cores, após o sorteio será exibido no terminal o resultado.

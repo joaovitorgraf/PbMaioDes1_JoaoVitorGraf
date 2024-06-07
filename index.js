@@ -4,7 +4,6 @@ function gerarSequenciaDeCores() {
   modulos.criarArquivo(); // Verifica se o arquivo resutlado.txt existe, caso não tenha ele será criado
 
   const arrCores = ["verde", "azul", "amarelo", "vermelho"];
-
   let arrTemp = []; // Array temporário para auxiliar na criação da sequência de cores
   let sequenciaTemp = ""; // Variável temporária para salvar a sequência de cores sorteada como string
   const arr = [];

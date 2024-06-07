@@ -56,7 +56,7 @@ module.exports.resultado = () => {
     }
   });
 
-  console.log(chalk.bgWhite("RESULTADO:"));
+  console.log(chalk.bgWhite.bold("RESULTADO:"));
   console.log(chalk.bgGreen(`Verde: ${verde}`));
   console.log(chalk.bgBlue(`Azul: ${azul}`));
   console.log(chalk.bgYellow(`Amarelo: ${amarelo}`));
